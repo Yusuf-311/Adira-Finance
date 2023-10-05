@@ -246,6 +246,19 @@
           </div>
         </div>
       </section>
+
+      <menu class="zindex-5">
+        <a href="#" class="action"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="action"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="action"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="action"><i class="bi bi-facebook"></i></a>
+        <div class="trigger p-2">
+          <img
+            src="https://www.adira.co.id/frontend/images/Logo-Adira-Finance-200-yellow.png"
+            alt="Logo Adira Finance"
+          />
+        </div>
+      </menu>
       <!-- Social Prove -->
       <section class="container shadow-sm rounded-3 border mb-xl-3 mb-xxl-5">
         <div class="bg-light rounded-5">
@@ -745,6 +758,12 @@
       </footer>
       <!-- Footer Akhir -->
     </main>
+    <script>
+      const trigger = document.querySelector("menu > .trigger");
+      trigger.addEventListener("click", (e) => {
+        e.currentTarget.parentElement.classList.toggle("open");
+      });
+    </script>
 
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>
